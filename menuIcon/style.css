@@ -1,0 +1,40 @@
+.non-animating {
+  margin-top: 20px;
+}
+
+span.bar {
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: black;
+  margin-bottom: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar-1,
+.bar-2,
+.bar-3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar-1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar-2 {
+  opacity: 0;
+}
+
+.change .bar-3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
