@@ -1,0 +1,65 @@
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::after {
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: block;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+.col-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid red;
+}
+
+nav {
+  background-color: rgb(172, 172, 172);
+  font-size: 1.2rem;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+.nav-left {
+  display: flex;
+  gap: 1rem;
+}
+
+input[type="text"] {
+  border: none;
+  padding: 0.4rem;
+}
+
+input[type="text"]:focus {
+  background-color: greenyellow;
+  border: none;
+  outline: none;
+}
+
+/* label[for="search"] {
+} */
+
+.search {
+}
+
+.search-icon {
+  padding-left: 1rem;
+  line-height: inherit;
+}

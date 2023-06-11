@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 90vh;
+
+            }
+            .card {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+
+
+            }
+            .card:hover {
+                transform: skew(20deg, 20deg);
+                transition: transform 2s;
+                animation: anima 3s ease 0s infinite;
+            }
+
+            @keyframes anima {
+                0% {
+                    transform: skew(-30deg, -30deg);
+                }
+                20% {
+                    transform: skew(0deg, 0deg);
+                }
+                50% {
+                    transform: skew(30deg, 30deg);
+                }
+                80% {
+                    transform: skew(0deg, 0deg);
+                }
+                100% {
+                    transform: skew(-30deg, -30deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="card" style="text-align: center; line-height: 200px;">
+            Hello Div
+        </div>
+    </body>
+</html>
